@@ -111,7 +111,8 @@ body {
 /* main */
 /* hero */
 .hero {
-  background: #2f303a;
+  background-image: url("background.png");
+  background-color: rgba(47, 48, 58, 0.4);
   color: var(--second-accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -343,6 +344,12 @@ body {
   width: 370px;
   flex-basis: calc(100% / 3 - 30px);
   margin: 15px;
+}
+.project-box:hover,
+.project-box:focus {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-link {
   text-decoration: none;
