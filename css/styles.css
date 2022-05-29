@@ -252,6 +252,27 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* clients section */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+}
+.clients-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-icon:hover,
+.clients-icon:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
 /* footer */
 .footer {
   background: var(--footer-bg-color);
