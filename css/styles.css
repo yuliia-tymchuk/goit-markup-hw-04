@@ -111,12 +111,24 @@ body {
 /* main */
 /* hero */
 .hero {
-  background-image: url("background.png");
-  background-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
   color: var(--second-accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -176,6 +188,14 @@ body {
 }
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+.features-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .features-title {
   font-weight: 700;
@@ -263,12 +283,16 @@ body {
 .clients-list {
   display: flex;
 }
-.clients-icon {
+.clients-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 170px;
 }
-.clients-icon:hover,
-.clients-icon:focus {
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
