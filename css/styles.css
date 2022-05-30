@@ -92,20 +92,37 @@ body {
   color: var(--accent-color);
 }
 .contact-list {
-  display: flex;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
 }
 .contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  height: 16px;
 }
 .contacts + .contacts {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .header-contact-link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-icon {
+  fill: var(--text-color);
+  margin-right: 10px;
+}
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+.header-contact-link:hover .contacts-icon,
+.header-contact-link:focus .contacts-icon {
+  fill: var(--accent-color);
 }
 
 /* main */
