@@ -329,7 +329,6 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
-
 .clients-icon {
   fill: #afb1b8;
 }
@@ -372,6 +371,53 @@ body {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--second-accent-color);
+}
+.footer-links {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.links-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-accent-color);
+  margin-bottom: 20px;
+}
+
+.ftr-soc-list {
+  display: flex;
+  justify-content: center;
+}
+.ftr-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+.ftr-soc-item:last-child {
+  margin-right: 0;
+}
+.ftr-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--second-accent-color);
+}
+.ftr-soc-link:hover,
+.ftr-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.ftr-soc-link:hover .ftr-soc-icon,
+.ftr-soc-link:focus .ftr-soc-icon {
+  fill: var(--second-accent-color);
+}
+.ftr-container {
+  display: flex;
 }
 
 /* portfolio */
