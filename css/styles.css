@@ -390,9 +390,12 @@ body {
 .contact-link:focus {
   color: var(--second-accent-color);
 }
+.ftr-container {
+  display: flex;
+  align-items: baseline;
+}
 .footer-links {
   margin-left: 70px;
-  padding-top: 12px;
 }
 .links-title {
   font-weight: 700;
@@ -433,9 +436,6 @@ body {
 .ftr-soc-link:hover .ftr-soc-icon,
 .ftr-soc-link:focus .ftr-soc-icon {
   fill: var(--second-accent-color);
-}
-.ftr-container {
-  display: flex;
 }
 
 /* portfolio */
